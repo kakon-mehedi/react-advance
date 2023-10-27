@@ -1,0 +1,39 @@
+.container {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.stopwatch {
+	background-color: aliceblue;
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.timer {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+button {
+	padding: 10px 30px;
+	border-radius: 4px;
+	font-size: 1rem;
+	margin: 2px;
+	cursor: pointer;
+	border: none;
+	background: steelblue;
+	color: white;
+}
+
+button:disabled {
+	background: lightgray;
+	color: darkgray;
+}

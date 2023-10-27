@@ -1,11 +1,8 @@
 import './App.css';
+import Stopwatch from './modules/fun-projects/stopwatch/Stopwatch';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to React Dev!</h1>
-    </div>
-  );
+	return <Stopwatch></Stopwatch>;
 }
 
 export default App;
