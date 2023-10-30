@@ -39,7 +39,7 @@ export default function Stopwatch() {
 		setIsStopDisable(true);
 		setIsResetDisable(false);
 
-		setStartText('Pause');
+		setStartText('Continue');
 		setLastTimeAmount(time);
 		clearInterval(intervalId);
 	}
@@ -69,9 +69,13 @@ export default function Stopwatch() {
 	return (
 		<div className='container'>
 			<div className='stopwatch'>
-				<p className='timer'>{`${Math.floor(time / 6000) % 60}:${
-					Math.floor(time / 100) % 60
-				}:${time % 100 < 10 ? `0${time % 100}` : time % 100}`}</p>
+				<p className='timer'>
+					{`
+					${Math.floor(time / 6000) % 60}:
+					${Math.floor(time / 100) % 60}:
+					${time % 100 < 10 ? `0${time % 100}` : time % 100}
+					`}
+				</p>
 				<div className='button-list'>
 					<button
 						disabled={isStartDisable}
